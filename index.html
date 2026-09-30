@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Java RAG Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="logo">
+                <span>☕</span>
+                <div>
+                    <h1>Java RAG Chatbot</h1>
+                    <p>Ask questions from your Java Notes</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                RAG Online
+            </div>
+
+        </header>
+
+
+        <!-- CHAT AREA -->
+
+        <main id="chatArea">
+
+            <div class="welcome">
+
+                <div class="bot-icon">
+                    🤖
+                </div>
+
+                <h2>Hello! 👋</h2>
+
+                <p>
+                    I am your Java learning assistant.
+                    Ask me anything from your uploaded Java notes.
+                </p>
+
+                <div class="suggestions">
+
+                    <button onclick="askSuggestion('What is Java?')">
+                        What is Java?
+                    </button>
+
+                    <button onclick="askSuggestion('What is OOP?')">
+                        What is OOP?
+                    </button>
+
+                    <button onclick="askSuggestion('Explain inheritance')">
+                        Explain inheritance
+                    </button>
+
+                    <button onclick="askSuggestion('What is a class?')">
+                        What is a class?
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- INPUT AREA -->
+
+        <div class="input-area">
+
+            <div class="input-box">
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Ask a question about Java..."
+                    autocomplete="off"
+                >
+
+                <button id="sendButton" onclick="sendQuestion()">
+                    ➤
+                </button>
+
+            </div>
+
+            <p class="info">
+                Answers are generated using your Java notes with RAG.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
